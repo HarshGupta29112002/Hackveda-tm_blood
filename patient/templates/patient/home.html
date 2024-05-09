@@ -1,0 +1,43 @@
+{% extends 'patient/base.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TM Blood Report</title>
+  </head>
+  <body style="background-color:rgb(242, 212, 250)" >
+    
+    <center><h1 style="color: rgb(161, 16, 228);">"Physical fitness is the first requisite of happiness."</h1></center>
+    <div class="add_search" >
+        <div class="row GB" >
+          <div class="col-1-of-2 GB">
+            <div class="card card__patient card__patient_add GB">
+              <center><img src="../static/patient/img/follow.png" height="150" alt="add patient image" />
+              <div class="card__patient_text">
+                <a href="{% url 'patient_create'%}" ><h2><b>Add patient</b></h2></a></center>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-2 GB" >
+            <div class="card card__patient card__patient_search GB">
+              <center><img src="../static/patient/img/magnifier.png" height="150" alt="add patient image" />
+              <div class="card__patient_text">
+                <a href="{% url 'search'%}"><h2><b>Search Patient </b></h2><i></i></a></center>
+              </div>
+            </div>
+           </div>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock  %}
+
+
+<!-- <li>
+    <a href="{% url 'patient_create' %}">Add patient</a>
+</li>
+<li>
+    <a href="{% url 'search' %}">Search patient</a>
+</li> -->
